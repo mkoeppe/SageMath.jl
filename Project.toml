@@ -1,0 +1,13 @@
+name = "SageMath"
+uuid = "4eee561f-70c6-4e30-9eeb-d3cf4085090f"
+authors = ["Matthias Koeppe <mkoeppe@math.ucdavis.edu> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
