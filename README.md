@@ -47,6 +47,16 @@
    PyObject A 3-dimensional polyhedron in ZZ^3 defined as the convex hull of 8 vertices
    ```
 
+4. Run tests:
+   ```
+   julia> sage_doctest_control = pyimport("sage.doctest.control")
+   julia> options = sage_doctest_control.DocTestDefaults()
+   julia> DC = sage_doctest_control.DocTestController(options, ["somefile.py"])
+   julia> DC.run()
+   ```
+
+In the instructions above, we do not activate the conda environment.
+Thus many tests that use external programs will fail.  This will need work as described in https://trac.sagemath.org/ticket/30818
 
 
 ## Variant 3: Using a Julia-specific Python distribution
